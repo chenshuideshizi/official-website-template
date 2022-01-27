@@ -1,4 +1,11 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('../common/head.ejs')({htmlWebpackPlugin}) %>
+</head>
+<body>
 <%= require('../common/header.ejs')({htmlWebpackPlugin}) %>
 <%= require('./modules/news.ejs')() %>
 <%= require('../common/footer.ejs')() %>
+</body>
+</html>

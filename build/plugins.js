@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCss = require('optimize-css-assets-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 const TransfromAssets = require('./transfromAssets');
 const path = require('path');
 const nav = require(`../config/data.js`).nav;
@@ -23,20 +25,29 @@ nav.forEach(value => {
 })
 
 const otherPlugins = [
+  new CopyWebpackPlugin({
+    patterns: [
+      {
+        from:  path.join(__dirname,'../public/**/*'),
+        to: path.resolve(__dirname, '../dist') 
+      }
+    ]
+  }),
   new MiniCssExtractPlugin({
     filename: '[name].[hash:8].css',
     chunkFilename: '[id].css',
   }),
-  new optimizeCss({
-    assetNameRegExp: /\.css$/g,
-    cssProcessor: require('cssnano'),
-    cssProcessorOptions: {
-      discardComments: {
-        removeAll: true
-      }
-    },
-    canPrint: true
-  }),
+  // 不需要压缩css
+  // new optimizeCss({
+  //   assetNameRegExp: /\.css$/g,
+  //   cssProcessor: require('cssnano'),
+  //   cssProcessorOptions: {
+  //     discardComments: {
+  //       removeAll: true
+  //     }
+  //   },
+  //   canPrint: true
+  // }),
   new TransfromAssets()
 ];
 
