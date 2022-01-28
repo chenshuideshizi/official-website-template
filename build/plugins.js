@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCss = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const TransfromAssets = require('./transfromAssets');
+// const TransfromAssets = require('./transfromAssets');
 const path = require('path');
 const nav = require(`../config/data.js`).nav;
 const plugins = [];
@@ -25,11 +25,20 @@ nav.forEach(value => {
 })
 
 const otherPlugins = [
-  new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, '../public')
+  new CopyWebpackPlugin({
+    patterns: [
+      { 
+        from: "public", 
+        toType: 'dir',
+        globOptions: {
+          ignore: [
+            '.DS_Store',
+            '**/index.html'
+          ]
+        }
       }
-  ]),
+    ]
+  }),
   new MiniCssExtractPlugin({
     filename: '[name].[hash:8].css',
     chunkFilename: '[id].css',
@@ -45,7 +54,7 @@ const otherPlugins = [
   //   },
   //   canPrint: true
   // }),
-  new TransfromAssets()
+  // new TransfromAssets()
 ];
 
 plugins.splice(nav.length, 0, ...otherPlugins);
