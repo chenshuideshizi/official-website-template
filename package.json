@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config build/webpack.config.js",
-    "dev": "webpack-dev-server --config build/webpack.config.js"
+    "build:tpl1": "webpack --config build/webpack.config.tpl1.js",
+    "dev:tpl1": "webpack-dev-server --config build/webpack.config.tpl1.js"
   },
   "author": "",
   "license": "ISC",
