@@ -1,17 +1,26 @@
-<div class="headr">
-    <div class="top container">
-      <h1><a href="http://www.xxzhixianshai.com/">直线振动筛</a></h1>
-      <div class="top_tel"><img src="/images/tel.png" alt="联系电话" width="300" height="63"/></div>
-    </div>
-
-    <div class="nav">
-        <ul class="container">
-          <li class="active"><a href="/">网站首页</a></li>
-          <li><a href="/cpzs.html">产品中心</a></li>
-          <li><a href="/xwzx.html">新闻资讯</a></li>
-          <li><a href="/spzq.html" rel="nofollow">视频专区</a></li>
-          <li><a href="/gydh.html" rel="nofollow">关于大汉</a></li>
-          <li><a href="/lxwm.html" rel="nofollow">联系我们</a></li>
-        </ul>
+<div class="wrapper">
+  <header class="header">
+      <h1 class="logo">某某公司</h1>
+      <div class="tel">
+          <div class="tel-text">全国统一销售热线</div>
+          <div class="tel-info">0373-0000000</div>
       </div>
-    </div>
+  </header>
+</div>
+
+<div class="nav-wrapper">
+  <div class="wrapper">
+      <nav class="nav">
+          <ul class="nav-list">
+              <% list=require('@config/data.js').nav %>
+              <% list.forEach(function(item){ %>
+                  <li class="nav-item">
+                      <a class="<%= htmlWebpackPlugin.options.path === item.path ? 'nav-link active' : 'nav-link' %>" href="/<%= item.path %>.html">
+                          <%= item.text %>
+                      </a>
+                  </li>
+              <% }); %>
+          </ul>
+      </nav>
+  </div>
+</div>

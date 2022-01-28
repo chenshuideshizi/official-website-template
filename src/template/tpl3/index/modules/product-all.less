@@ -1,138 +1,306 @@
-.container {
-    width:1300px;
-    overflow:hidden;
-    margin:0 auto
-}
-
-.prodisplay {
+.index_product {
     display: flex;
     overflow:hidden;
-    margin-top:30px;
+    margin-top:40px;
+    margin-bottom:25px
 }
-
-.sidebar_list {
-    width: 280px;
-    float:none;
-    overflow:hidden;
-}
-.recommended_products {
-    flex: 1;
-    overflow:hidden;
+.index_product_list {
     float:right;
+    width:76%
 }
-
-.recommended_products h3 {
-    font-size:20px;
-    background:#f9f9f9;
-    line-height:45px;
-    padding-left:20px;
-}
-.recommended_products ul {
+.index_product_list ul {
     overflow:hidden;
     margin-left:-1.5%;
-    padding:15px;
-    background:#fff
+    margin-top:10px
 }
-.recommended_products li {
+.index_product_list li {
     float:left;
-    width:23%;
-    margin-bottom:16px;
+    width:23.5%;
+    margin-bottom:25px;
     margin-left:1.5%;
     text-align:center;
-    border:1px solid #fff;
-    box-shadow: 0 0 15px rgba(18, 22, 27, .3);
-    padding-bottom:8px;
+    padding-bottom:10px
 }
-.recommended_products li img {
-    display: block;
-    width: 222px;
-    height: 166px;
-}
-.recommended_products a {
-    color:#333;
+.index_product_list li a {
     font-size:15px;
-    line-height:35px;
+    line-height:28px;
+    color:#333
 }
-.recommended_products .price {
+.index_product_list li img {
+    width:100%;
+    height: auto !important
+}
+.index_product_list li a:hover {
+    color:red;
+    text-decoration:underline
+}
+.index_product_list .title {
+    font-size:20px;
+    font-weight:700;
+    border-bottom:1px solid #046fd2;
+    line-height:40px;
+    padding-left:40px;
+    color:#fff
+}
+.index_product_list h2 {
+    font-size:20px;
+    color:#046fd2;
+    margin-bottom:15px;
+    background-size:25px;
+    padding-left:35px;
+}
+.index_product_sidebar {
+    float:left;
+    width:22%
+}
+.index_product_sidebar .title {
     overflow:hidden;
+    line-height:40px;
+    background-size:22px
 }
-.recommended_products .price i {
-    color:#d71c1c;
-    font-style: normal;
-    margin-right:15px;
-    font-size:15px;
-}
-.recommended_products .price span {
-    background:#007af4;
-    color:#fff;
-    padding:2px 10px;
-    cursor:pointer
-}
-.recommended_products .price span:hover {
-    text-decoration:underline;
-    background:#d71c1c
-}
-.recommended_products {
-    overflow:hidden;
-    background:#fff
-}
-
-.products_hot h2, .recommended_products h3, .pro_classification h3, .products_gallery h3, .about_display h3 {
-    font-size:17px;
-}
-.hometit, .prodisplay {
-    margin-top:10px;
-}
-.pro_classification li, .pro_contact p a, .bottom_nav a, .products_gallery li, .contact-index p {
-    font-size:14px;
-}
-.pro_classification {
-    background:#007af4;
-    padding:20px;
-    overflow:hidden
-}
-.pro_classification h3 {
-    text-align:center;
+.index_product_sidebar .title {
     font-size:20px;
     color:#fff;
-    line-height:45px;
+    font-weight:700;
+    padding-left:50px
 }
-.pro_classification ul {
+.index_product .index_product_sidebar .title {
+    font-size:15px;
+    color: #fff;
+    font-weight: 700;
+    background-size:18px;
+    padding-left:42px;
+}
+.index_product .index_product_sidebar .title a {
+    color: #fff;
+}
+
+.index_product_list {
+    float:right;
+    width:76%
+}
+.index_product_list ul {
     overflow:hidden;
-    margin-top:20px;
+    margin-left:-1.5%;
+    margin-top:10px
 }
-.pro_classification li {
-    margin-bottom:15px;
+.index_product_list li {
+    float:left;
+    width:23.5%;
+    margin-bottom:25px;
+    margin-left:1.5%;
     text-align:center;
+    padding-bottom:10px
 }
-.pro_classification li a {
-    background: linear-gradient(to top, #fff, #f0f0f0);
-    border-radius:10px;
-    display:block;
+.index_product_list li a {
+    font-size:15px;
+    line-height:28px;
+    color:#333
 }
-.pro_classification li a:hover {
-    color:#007af4;
+.index_product_list li img {
+    width:100%;
+    height: auto !important
+}
+.index_product_list li a:hover {
+    color:red;
     text-decoration:underline
 }
-.pro_classification dl {
+.index_product_list .title {
+    font-size:20px;
+    font-weight:700;
+    border-bottom:1px solid #046fd2;
+    line-height:40px;
+    padding-left:40px;
+    color:#fff
+}
+.index_product_list h2 {
+    font-size:20px;
+    color:#046fd2;
+    margin-bottom:15px;
+    background-size:25px;
+    padding-left:35px;
+}
+
+
+.vibration_sieve_content{float: left;width: 31%!important;}
+.vibration_sieve_fr1 {
+    float:right;
+    border: 5px #f0f0f0 solid;
+    padding-top: 0px;
+    border-radius: 0px 0px 60px 0px;
+    padding-bottom: 15px;
+}
+
+.vibration_sieve_fl p {
+    line-height: 30px;
+}
+.vibration_sieve_fr1 p {
+    line-height: 30px!important;
+}
+.vibration_sieve {
     overflow:hidden;
+    margin-bottom:20px;
     margin-top:10px;
 }
-.pro_classification dd {
-    margin-bottom:36px;
-    text-align:center;
+.vibration_sieve_fl {
+    float:left;
+    width:47%;
+    border:5px #f0f0f0 solid;
+    padding-top:0px;
+    border-radius: 0px 0px 60px 0px;
+    padding-bottom:15px;
 }
-.pro_classification dd a {
-    background: linear-gradient(to top, #fff, #f0f0f0);
-    border-radius:10px;
-    display:block;
+.vibration_sieve_fr {
+    float:left;
+    margin-left: 20px;
+    width:47%;
+    border:5px #f0f0f0 solid;
+    padding-top:0px;
+    border-radius: 0px 0px 60px 0px;
+    padding-bottom:15px;
 }
-.pro_classification dd a:hover {
-    color:#007af4;
+.vibration_sieve p {
+    font-size:15px;
+    line-height:28px;
+    padding:0px 15px;
+    color: #444;
+}
+.vibration_sieve b {
+    color:#ff4933;
+    font-size:16px;
+}
+.vibration_sieve .vibration_abstract span {
+    font-size:15px;
+    color:#046fd2
+}
+.vibration_sieve h3 {
+    font-size:17px;
+    overflow:hidden;
+    margin-bottom:10px;
+    padding-left:15px;
+}
+.vibration_sieve a:hover h3 {
+    color: #007AFF;
+    text-decoration: underline;
+}
+.vibration_sieve .vibration_material span {
+    color: #046fd2;
+    font-size: 15px;
+    border: 1px solid #046fd2;
+    padding: 2px 8px;
+    margin-left: 5px;
+}
+.vibration_sieve .vibration_mesh span {
+    color:#ff4933;
+}
+.vibration_sieve img {
+    display: block;
+    width:  306px;
+    height: 227px;
+    background-color: #ccc;
+}
+.vibration_img {
+    margin-bottom:10px;
+    overflow:hidden
+}
+.vibration_able span {
+    color: #046fd2;
+}
+
+.index_product_sidebar {
+    float:left;
+    width:22%
+}
+.index_product_sidebar .title {
+    overflow:hidden;
+    line-height:40px;
+    background-size:22px
+}
+.index_product_sidebar .title {
+    font-size:20px;
+    color:#fff;
+    font-weight:700;
+    padding-left:50px
+}
+.index_product .index_product_sidebar .title {
+    font-size:15px;
+    color: #fff;
+    font-weight: 700;
+    background-size:18px;
+    padding-left:42px;
+}
+.index_product .index_product_sidebar .title a {
+    color: #fff;
+}
+.index_product_sidebar ul {
+    overflow:hidden;
+    margin-bottom:30px;
+    border:1px solid #046fd2;
+    padding-top:20px
+}
+.index_product_sidebar li {
+    line-height:45px;
+    padding-left:25px;
+    background-size:10px;
+    overflow:hidden
+}
+.index_product_sidebar li a {
+    color:#333;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis
+}
+.index_product_sidebar li a:hover {
+    color:#0066FF
+}
+.index_product_sidebar h2 {
+    overflow:hidden;
+    line-height:40px;
+    background:#046fd2;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1px;
+    color:#fff;
+    font-weight:normal
+}
+.index_product_sidebar dl {
+    overflow:hidden;
+    margin-bottom:3px;
+    border:1px solid #f0f0f0;
+    padding-top:5px
+}
+.index_product_sidebar dd {
+    line-height:44px;
+    width:40%;
+    float: left;
+    padding-left:20px;
+    text-overflow: ellipsis;
+    white-space: normal;
+    background-size:8px;
+    overflow:hidden
+}
+.index_product_sidebar dd a {
+    color:#444;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 15px;
+}
+.index_product_sidebar dd:hover a {
+    color:#0066FF;
     text-decoration:underline
 }
-.pro_classification dd a {
-    line-height:50px;
-    color:#333;
-    font-size:15px;
+.index_product_sidebar dl li {
+    padding-left: 20px;
+    float: left;
+    width: 40%;
 }
+.index_product .index_product_sidebar .title {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    background: #046fd2 ;
+    background-size: 18px;
+    padding-left: 42px;
+}
+.index_product .index_product_sidebar .title a{color: #fff;}
