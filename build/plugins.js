@@ -25,14 +25,11 @@ nav.forEach(value => {
 })
 
 const otherPlugins = [
-  // new CopyWebpackPlugin({
-  //   patterns: [
-  //     {
-  //       from:  path.join(__dirname,'../public/**/*'),
-  //       to: path.resolve(__dirname, '../dist') 
-  //     }
-  //   ]
-  // }),
+  new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../public')
+      }
+  ]),
   new MiniCssExtractPlugin({
     filename: '[name].[hash:8].css',
     chunkFilename: '[id].css',
