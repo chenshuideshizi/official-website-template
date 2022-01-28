@@ -17,7 +17,7 @@
   <div class="page-head">
     <div class="logo"></div>
     <div class="nav-list">
-      <% list = require('../data.js').nav %>
+      <% list = require('@config/data.js').nav %>
       <% list.forEach(function(item){ %>
         <a class="<%= htmlWebpackPlugin.options.path === item.path ? 'nav-item active' : 'nav-item' %>" href="/<%= item.path %>.html">
           <span class="span1"><%= item.text %></span>

@@ -7,7 +7,9 @@
     "build:tpl1": "webpack --config build/webpack.config.tpl1.js",
     "dev:tpl1": "webpack-dev-server --config build/webpack.config.tpl1.js",
     "build:tpl2": "webpack --config build/webpack.config.tpl2.js",
-    "dev:tpl2": "webpack-dev-server --config build/webpack.config.tpl2.js"
+    "dev:tpl2": "webpack-dev-server --config build/webpack.config.tpl2.js",
+    "build:tpl3": "webpack --config build/webpack.config.tpl3.js",
+    "dev:tpl3": "webpack-dev-server --config build/webpack.config.tpl3.js"
   },
   "author": "",
   "license": "ISC",
