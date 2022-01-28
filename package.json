@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:tpl1": "webpack --config build/webpack.config.tpl1.js",
-    "dev:tpl1": "webpack-dev-server --config build/webpack.config.tpl1.js"
+    "dev:tpl1": "webpack-dev-server --config build/webpack.config.tpl1.js",
+    "build:tpl2": "webpack --config build/webpack.config.tpl2.js",
+    "dev:tpl2": "webpack-dev-server --config build/webpack.config.tpl2.js"
   },
   "author": "",
   "license": "ISC",
