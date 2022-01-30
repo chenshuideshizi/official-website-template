@@ -1,24 +1,36 @@
 
-.about_display {
-    width: 1300px;
-    margin: 0 auto;
-    h3 {
-        text-align: center;
-        font-size: 34px;
-    }
-    .text {
-        text-align: center;
-    }
-}
+.aboutus-module {
 
-.logo-header img{ width:100%; height:auto !important}
-.logo-header{ float:none; width:100%; overflow:hidden}
-.about_display .fw-lc .left{ padding:10px;}
-.about_display .fw-lc .left .lxfs{margin-right:0px; width:100%}
-.about_display .fw-lc .left .lxfs span{ font-size:15px;}
-.about_display .fw-lc .left .lxfs a{ font-size:15px;}
-.about_display .fw-lc .right{ float:none; width:100%; overflow:hidden}
+    .aboutus-content {
+        display: flex;
+        .content-left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .company-intro {
+                line-height: 2;
+                flex: 1;
+            }
+            .aboutus-menu {
+                display: flex;
+                .menu-item {
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+        }
 
-.aboutus-content {
-    display: flex;
+        .content-right {
+            width: 50%;
+
+            .company-photo {
+                width: 100%;
+                height: 350px;
+                background-color: #ccc;
+            }
+        }
+    }
+
 }
