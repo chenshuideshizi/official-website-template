@@ -1,25 +1,36 @@
-<div class="products hometit"></div>
+
     <!--products hot end-->
     <div class="prodisplay container">
 
-      <div class="sidebar_list">
         <div class="pro_classification">
-          <h3>产品类别</h3>
-          <dl>
+          <h3 class="title">产品类别</h3>
+
+          <ul class="product-cate-list">
             <% for (let i = 0; i < 8; i++) { %>
-            <dd><a href="/pro/List8_1.html" target="_blank">直线振动筛</a></dd>
+            <li class="product-cate-item"><a href="/pro/List8_1.html" target="_blank">直线振动筛</a></li>
             <% } %>
-          </dl>
+            </ul>
         </div>
-      </div>
 
       <div class="recommended_products">
-        <h3>推荐产品<span>（我们致力于为用户提供精细筛分产品及配件供应，解决食品、医药、化工、冶金、建材等行业的筛分难题）</span></h3>
-        <ul>
+        <div class="title-box">
+          <h3 class="title">推荐产品</h3>
+          <span class="title-right">（我们致力于为用户提供精细筛分产品及配件供应，解决食品、医药、化工、冶金、建材等行业的筛分难题）</span>
+        </div>
+       
+        <ul class="product-list">
           <% for (let i = 0; i < 16; i++) { %>
-          <li>
-            <p class="title"><a href="/pro/proshow1480.html" target="_blank"><img src="/images/202003251506.jpg" width="221" height="166" border="0" alt="不锈钢直线振动筛"/><br/>不锈钢直线振动筛</a></p>
-            <p class="price"><i>4500~50000元</i><span onclick="openZoosUrl(); _czc.push(['_trackEvent', 0,])">立即咨询</span></p>
+          <li class="product-item">
+            <a class="product-link" href="#" target="_blank">
+              <img class="product-img" src="/images/loading.png" />
+              <div class="product-name">不锈钢直线振动筛</div>
+
+
+              <div class="product-price">
+                <i class="price">4500~50000元</i>
+                <span class="service-btn">立即咨询</span>
+              </div>
+            </a>
           </li>
           <% } %>
         </ul>
@@ -28,4 +39,3 @@
 
     </div>
     <!--products list end--> 
-  </div>
