@@ -1,7 +1,8 @@
 
     <!--products hot end-->
     <div class="all-product wrapper">
-
+      <%= require('../../common/modules/module-title.ejs')({title: '推荐产品'}) %>
+      <div class="all-product-content">
         <div class="pro_classification">
           <h3 class="title">产品类别</h3>
 
@@ -12,30 +13,18 @@
             </ul>
         </div>
 
-      <div class="recommended_products">
-        <div class="title-box">
-          <h3 class="title">推荐产品</h3>
-          <span class="title-right">（我们致力于为用户提供精细筛分产品及配件供应，解决食品、医药、化工、冶金、建材等行业的筛分难题）</span>
+        <div class="recommended_products">
+          <ul class="product-list">
+            <% for (let i = 0; i < 16; i++) { %>
+            <li class="product-item">
+              <a class="product-link" href="#" target="_blank">
+                <img class="product-img" src="/images/loading.png" />
+                <div class="product-name">不锈钢直线振动筛</div>
+              </a>
+            </li>
+            <% } %>
+          </ul>
         </div>
-       
-        <ul class="product-list">
-          <% for (let i = 0; i < 16; i++) { %>
-          <li class="product-item">
-            <a class="product-link" href="#" target="_blank">
-              <img class="product-img" src="/images/loading.png" />
-              <div class="product-name">不锈钢直线振动筛</div>
-
-
-              <div class="product-price">
-                <i class="price">4500~50000元</i>
-                <span class="service-btn">立即咨询</span>
-              </div>
-            </a>
-          </li>
-          <% } %>
-        </ul>
       </div>
-
-
     </div>
     <!--products list end--> 

@@ -1,6 +1,6 @@
 module.exports = {
     nav: [{
-      text: '首页',
+      text: '网站首页',
       en: 'HOME',
       path: 'index'
     }, {
@@ -8,7 +8,7 @@ module.exports = {
       en: 'CONTACT US',
       path: 'contact'
     }, {
-      text: '产品',
+      text: '产品展示',
       en: 'PRODUCT',
       path: 'product'
     }]
