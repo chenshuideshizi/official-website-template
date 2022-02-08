@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-themes": "rm -rf src/themes/*.less && node script/generate-themes.js",
-    "dev": "webpack --config build/webpack.dev.config.js",
+    "generate-themes": "rm -rf src/themes/*.less && node scripts/generate-themes.js",
+    "dev": "npm run generate-themes && webpack --mode development --config build/webpack.dev.config.js",
     "build:tpl1": "webpack --config build/webpack.config.tpl1.js",
     "dev:tpl1": "webpack-dev-server --config build/webpack.config.tpl1.js",
     "build:tpl2": "webpack --config build/webpack.config.tpl2.js",

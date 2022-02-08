@@ -6,7 +6,7 @@ const HtmlwebpackPlugin = require('html-webpack-plugin');
 
 
 // 主题路径
-const THEME_PATH = './src/themes';
+const THEME_PATH = './src/less/themes';
 
 const extractLess = new ExtractTextPlugin('style.[hash].css');
 
@@ -24,27 +24,27 @@ const themeLoaderSet = themeFileNameSet.map((fileName, index) => {
   return {
     test: /\.(less|css)$/,
     include: resolveToThemeStaticPath(fileName),
-    loader: themesExtractLessSet[index].extract({
+    use: themesExtractLessSet[index].extract({
       use: styleLoaders
     })
   }
 });
 
+console.log('themeLoaderSet', themeLoaderSet)
+
 
 module.exports = {
-  mode: 'development',
   devServer: {
     historyApiFallback: true,
     host: '0.0.0.0',
     port: 3201
   },
   entry: {
-    app: './src/index.js',
-    themes: './src/themes.js'
+    themes: 'src/themes.js'
   },
   output: {
     filename: '[name].bundle.js?[hash]',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     clean: true
   },
   module: {
@@ -57,7 +57,7 @@ module.exports = {
       {
         test: /\.(less|css)$/,
         exclude: themePaths,
-        loader: extractLess.extract({
+        use: extractLess.extract({
           use: styleLoaders,
           // use style-loader in development
           fallback: 'style-loader?{attrs:{prop: "value"}}'
