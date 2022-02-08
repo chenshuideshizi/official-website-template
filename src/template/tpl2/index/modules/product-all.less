@@ -24,20 +24,27 @@
         margin-bottom:16px;
         margin-left:1.5%;
         text-align:center;
-        border:1px solid #fff;
-        box-shadow: 0 0 15px rgba(18, 22, 27, .3);
-        padding-bottom:8px;
 
+
+        .product-link {
+            display: block;
+            border: 4px solid #fff;
+            box-shadow: 0 0 15px rgba(18, 22, 27, .3);
+            &:hover {
+                border-color: rgba(18, 22, 27, 0.5);
+                box-shadow: 0 0 15px rgba(18, 22, 27, .5);
+            }
+        }
         .product-img {
             display: block;
             width: 100%;
             height: auto;
         }
     
-        .product-link {
+        .product-name {
             color:#333;
-            font-size:15px;
-            line-height:35px;
+            height: 50px;
+            line-height: 50px;
         }
     }
 
