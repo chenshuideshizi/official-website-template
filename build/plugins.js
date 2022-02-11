@@ -21,21 +21,8 @@ const plugins = [
     ]
   }),
   new MiniCssExtractPlugin({
-    filename: '[name].[hash:8].css',
-    chunkFilename: '[id].css',
-  }),
-  // 不需要压缩css
-  // new optimizeCss({
-  //   assetNameRegExp: /\.css$/g,
-  //   cssProcessor: require('cssnano'),
-  //   cssProcessorOptions: {
-  //     discardComments: {
-  //       removeAll: true
-  //     }
-  //   },
-  //   canPrint: true
-  // }),
-  // new TransfromAssets()
+    filename: 'themes.[name].css'
+  })
 ];
 
 module.exports = plugins;

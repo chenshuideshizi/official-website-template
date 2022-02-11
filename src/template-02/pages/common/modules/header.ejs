@@ -1,0 +1,23 @@
+<header class="header wrapper">
+    <%= require('./theme-change.ejs')() %>
+    <h1 class="logo">某某公司</h1>
+    <div class="tel">
+        <div class="tel-text">全国统一销售热线</div>
+        <div class="tel-info">0373-0000000</div>
+    </div>
+</header>
+
+<div class="nav-outer">
+    <nav class="nav wrapper">
+        <ul class="nav-list">
+            <% list=require('@config/data.js').nav %>
+            <% list.forEach(function(item){ %>
+                <li class="nav-item">
+                    <a class="<%= htmlWebpackPlugin.options.path === item.path ? 'nav-link active' : 'nav-link' %>" href="/<%= item.path %>.html">
+                        <%= item.text %>
+                    </a>
+                </li>
+            <% }); %>
+        </ul>
+    </nav>
+</div>

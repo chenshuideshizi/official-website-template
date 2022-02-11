@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "generate-themes": "rm -rf src/themes/*.less && node scripts/generate-themes.js",
-    "dev": "npm run generate-themes && webpack --mode development --config build/webpack.dev.config.js",
+    "dev": "npm run generate-themes && webpack-dev-server --mode development --config build/webpack.dev.config.js",
+    "build": "npm run generate-themes && webpack --mode development --config build/webpack.dev.config.js",
     "build:tpl1": "webpack --config build/webpack.config.tpl1.js",
     "dev:tpl1": "webpack-dev-server --config build/webpack.config.tpl1.js",
     "build:tpl2": "webpack --config build/webpack.config.tpl2.js",
     "dev:tpl2": "webpack-dev-server --config build/webpack.config.tpl2.js",
     "build:tpl3": "webpack --config build/webpack.config.tpl3.js",
-    "dev:tpl3": "webpack-dev-server --config build/webpack.config.tpl3.js"
+    "dev:tpl3": "webpack-dev-server --config build/webpack.config.tpl3.js",
+    "build:template": "webpack --mode development --config build/webpack.dev.config.js",
+    "dev:template01": "webpack-dev-server --mode development --config build/webpack.template01.config.js",
+    "dev:template02": "webpack-dev-server --mode development --config build/webpack.template02.config.js"
+
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +29,7 @@
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
     "ejs-loader": "^0.3.3",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^5.5.0",
     "less": "^3.9.0",

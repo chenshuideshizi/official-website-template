@@ -15,10 +15,10 @@ Object.entries(THEMES_CONFIG).forEach(([theme, config]) => {
   const modifyVariablesContent = Object.entries(config).map(([key, value]) => `@${key}:${value};`).join('\r')
 
   const content = `
-@import "../index";
-
 // Generate by Script, Config file is themes.config.js
 ${modifyVariablesContent}
+
+@import "../index";
 `;
 
   const outPutFilePath = path.join(__dirname, OUTPUT_DIR, fileName);
