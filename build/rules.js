@@ -35,8 +35,16 @@ module.exports = [{
         minimize: false
       }
     }]
-  }, {
+  }, 
+  {
     test: /\.ejs/,
     use: ['ejs-loader'],
+  },
+  { // 加载图片
+    test: /\.(png|svg|jpg|jpeg|gif)(\?.*)?$/,
+    type: 'asset/resource',
+    generator: {
+      filename: 'static/images/[name].[hash][ext][query]'
+    }
   }
 ]

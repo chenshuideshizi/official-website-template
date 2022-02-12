@@ -1,6 +1,6 @@
-<div class="container index_news">
+<div class="wrapper index_news">
   <div class="index_news_list">
-    <h2>新闻中心</h2>
+    <%= require('../../common/modules/module-title.ejs')({title: '新闻中心'}) %>
     <div class="index_news_recommended"> <dl>
         <a href="/396.html" target="_blank">
           <dt><img src="/uploads/allimg/190626/3-1Z6261G343441.jpg" alt="铁渣筛分要选择什么型号的振动筛？" width="134" height="100"/></dt>
@@ -39,7 +39,7 @@
     </ul>
   </div>
   <div class="index_news_answers">
-    <h2>常见问题</h2>
+    <%= require('../../common/modules/module-title.ejs')({title: '常见问题'}) %>
     <div class="common_ask guess-box">
       <ul>
         <li>
