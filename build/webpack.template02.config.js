@@ -14,7 +14,7 @@ nav.forEach(value => {
       filename: `${value.path}.html`,
       template: resolve(`./pages/${value.path}/index.ejs`),
       inject: true,
-      chunks: ['themeChange', value.path],
+      chunks: ['themeChange', 'default', value.path],
       title: `${value.text}-官网`,
       path:value.path,
       minify: {
@@ -32,6 +32,7 @@ module.exports = merge(baseConfig, {
   },
   entry: {
     themeChange: resolve('./theme-change.js'),
+    default: resolve('./entry/default.js'),
     blue: resolve('./entry/blue.js'),
     red: resolve('./entry/red.js')
   },
