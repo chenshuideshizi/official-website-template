@@ -15,14 +15,11 @@
     <div class="wrapper">
         <nav class="nav">
             <ul class="nav-list">
-                <% list=require('@config/data.js').nav %>
-                <% list.forEach(function(item){ %>
+                <% for (let i = 0; i < 8; i++) { %>
                     <li class="nav-item">
-                        <a class="<%= htmlWebpackPlugin.options.path === item.path ? 'nav-link active' : 'nav-link' %>" href="/<%= item.path %>.html">
-                            <%= item.text %>
-                        </a>
+                        <a class="nav-link" href="#">网站首页</a>
                     </li>
-                <% }); %>
+                <% }; %>
             </ul>
         </nav>
     </div>
