@@ -29,5 +29,5 @@ const toggleTheme = (theme) => {
 }
 
 window.toggleTheme = toggleTheme
-toggleTheme('blue')
+toggleTheme('default')
 
