@@ -1,6 +1,6 @@
 <div class="wrapper module-news-wrapper">
   <div class="index_news_list">
-    <%= require('../../../../modules/module-title/template.ejs')({title: '新闻中心'}) %>
+    <%= require('../module-title/template.ejs')({title: '新闻中心'}) %>
     <div class="pic-news-list"> 
       <% for (let i = 0; i < 2; i++) { %>
       <div class="pic-news-item">
@@ -25,7 +25,7 @@
   </div>
 
   <div class="module-answer">
-    <%= require('../../../../modules/module-title/template.ejs')({title: '常见问题'}) %>
+    <%= require('../module-title/template.ejs')({title: '常见问题'}) %>
     <div class="common_ask guess-box">
       <ul>
         <% for (let i = 0; i < 5; i++) { %>
