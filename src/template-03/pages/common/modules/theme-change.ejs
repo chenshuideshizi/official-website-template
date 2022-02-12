@@ -1,0 +1,15 @@
+<select id="theme-change">
+    <option value ="default">Default</option>
+    <option value ="blue">Blue</option>
+    <option value ="red">Red</option>
+</select>
+
+<script>
+    const $themeChange = document.querySelector('#theme-change')
+    $themeChange.addEventListener('change', (e) => {
+        const options = e.target.options
+        const value = options[options.selectedIndex].value
+        window.toggleTheme(value)
+    })
+</script>
+

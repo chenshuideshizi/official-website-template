@@ -1,0 +1,49 @@
+.nav-wrapper {
+    background-color: @nav-bg-color;
+}
+#nav {
+	height: 55px;
+    margin: 0 auto;
+    display: flex;
+    .nav-item {
+        position: relative;
+        width: 150px;
+        height: 55px;
+        text-align: center;
+        transition: all 0.4s;
+
+        &:hover, &.current {
+            background: @nav-hover-bg-color;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 0;
+            border-bottom: 2px solid #fff;
+            display: block;
+            transform: translateX(-50%);
+            line-height: 60px;
+            transition: 0.3s all;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}
+
+
+#nav li a, #nav li.current a {
+	display: block;
+	padding: 0px 12px 0 13px;
+	height: 60px;
+	line-height: 60px;
+	transition: all 0.4s;
+	font-size: 16px;
+	color: #FFF
+}
+
+

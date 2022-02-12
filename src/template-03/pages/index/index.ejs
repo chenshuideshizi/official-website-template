@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('../common/modules/head.ejs')({htmlWebpackPlugin}) %>
+</head>
+<body>
+    <%= require('../../../modules/theme-change/template.ejs')() %>
+<%= require('../../../modules/top-bar/template.ejs')() %>
+<%= require('../../../modules/header/template.ejs')() %>
+<%= require('../../../modules/nav/template.ejs')() %>
+<%= require('../../../modules/banner/template.ejs')() %>
+
+<%= require('../../../modules/product-core/template.ejs')() %>
+<%= require('../../../modules/advantage/template.ejs')() %>
+
+<%= require('./modules/advantage.ejs')() %>
+<%= require('./modules/product-core.ejs')() %>
+<%= require('./modules/product-relevat.ejs')() %>
+<%= require('./modules/case.ejs')() %>
+<%= require('./modules/news.ejs')() %>
+<%= require('./modules/aboutus.ejs')() %>
+<%= require('./modules/partner.ejs')() %>
+<%= require('../common/modules/footer.ejs')() %>
+
+
+
+
+</body>
+</html>

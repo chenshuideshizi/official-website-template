@@ -15,7 +15,8 @@
     "dev:tpl3": "webpack-dev-server --config build/webpack.config.tpl3.js",
     "build:template": "webpack --mode development --config build/webpack.dev.config.js",
     "dev:template01": "webpack-dev-server --mode development --config build/webpack.template01.config.js",
-    "dev:template02": "webpack-dev-server --mode development --config build/webpack.template02.config.js"
+    "dev:template02": "webpack-dev-server --mode development --config build/webpack.template02.config.js",
+    "dev:template03": "webpack-dev-server --mode development --config build/webpack.template03.config.js"
 
   },
   "author": "",

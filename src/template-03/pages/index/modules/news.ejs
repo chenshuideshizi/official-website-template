@@ -1,0 +1,42 @@
+<div class="wrapper module-news-wrapper">
+  <div class="index_news_list">
+    <%= require('../../../../modules/module-title/template.ejs')({title: '新闻中心'}) %>
+    <div class="pic-news-list"> 
+      <% for (let i = 0; i < 2; i++) { %>
+      <div class="pic-news-item">
+        <a class="link" href="#" target="_blank">
+          <div class="news-pic">
+            <img class="transiton-scale" src="./images/product_1.jpeg" alt="铁渣筛分要选择什么型号的振动筛？" width="134" height="100"/>
+          </div>
+          <div class="news-details">
+            <div class="news-title">铁渣筛分要选择什么型号的振动筛？</div>
+            <p>产量低时，可选用小型号的直线振动筛，如；产量高时，可选用...</p>
+          </div>
+        </a>
+      </div>
+      <% } %>
+    </div>
+    <ul>
+        <% for (let i = 0; i < 12; i++) { %>
+        <li class="news-item"><a href="#" target="_blank">515直线振动筛属于重型矿用振动筛吗</a><span>2021-10-28</span></li>
+        <% } %>
+
+    </ul>
+  </div>
+
+  <div class="module-answer">
+    <%= require('../../../../modules/module-title/template.ejs')({title: '常见问题'}) %>
+    <div class="common_ask guess-box">
+      <ul>
+        <% for (let i = 0; i < 5; i++) { %>
+        <li class="answer-item">
+          <p class="question"><span>问</span>直线振动筛台时产量多少？</p>
+          <p class="solution"><span>答</span>这个主要是根据您的筛分物料，设备型号等来决定的，我们的直线筛产量范围在0.12-20t/h</p>
+        </li>
+        <% } %>
+      </ul>
+      <div class="guess-switch"><a href="javascript:void(0)" rel="nofollow"> <span class="switch">换一组</span></a></div>
+
+    </div>
+  </div>
+</div>

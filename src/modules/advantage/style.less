@@ -1,0 +1,82 @@
+/*优势*/
+.advantage-wrapper {
+	background: url('/images/advance_bg.jpeg') no-repeat center top;
+	background-size: auto 100%;
+	padding: 60px 0;
+}
+.advantage {
+    height: auto;
+    overflow: hidden;
+    .advantage-box {
+        transition:all 0.4s;
+		&:hover {
+			background:#dd1c26;
+			.advantage-name {
+				color: #fff;
+			}
+			.advantage-text {
+				color: #fff;
+			}
+		}
+		a:hover p, .index_youshi a:hover span {
+			color:#FFF;
+		}
+    }
+	.advantage-main {
+		display: flex;
+	}
+
+	.advantage-details {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 450px;
+		height: 264px;
+	}
+    .advantage-name {
+        text-align:center;
+        color:#da0000;
+        font-weight:bold;
+        font-size:22px;
+        height:35px;
+        line-height:35px;
+        padding-bottom:15px;
+    }
+    .advantage-text {
+        padding:20px 40px 0;
+        font-size:15px;
+        color:#666;
+        line-height:30px;
+        text-align:center;
+        display:block;
+    }
+	.advantage-pic {
+		display: block;
+		width: 450px;
+		height: 264px;
+	}
+
+}
+.advantage-title {
+    text-align:center;
+    padding-bottom:40px;
+    .english-title {
+        color:#c2c2c2;
+        font-size:24px;
+        text-transform:uppercase;
+        font-weight:bold;
+        text-align:center
+    }
+    .main-title {
+        font-size:36px;
+        padding:8px 0;
+        b {
+            font-size:36px;
+            color:#da0000
+        }
+    }
+    .sub-title {
+        color:#545454;
+        font-size:16px;
+    }
+}
